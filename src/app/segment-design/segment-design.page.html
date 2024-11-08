@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>segmentDesign</ion-title>
+  </ion-toolbar>
+  <ion-segment (ionChange)="segmentChg($event)">
+    <ion-segment-button value="first" content-id="first" layout="icon-start">
+      <ion-label *ngIf="selectedSeg == 'first'">First</ion-label>
+      <ion-icon name="logo-facebook"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="second" content-id="second" layout="icon-start">
+      <ion-label *ngIf="selectedSeg == 'second'">Second</ion-label>
+      <ion-icon name="logo-instagram"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="third" content-id="third" layout="icon-start"
+    class="segment-slack">
+      <ion-label *ngIf="selectedSeg == 'third'">Third</ion-label>
+      <ion-icon name="logo-slack"></ion-icon> 
+    </ion-segment-button>
+  </ion-segment>
+  
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-segment-view>
+    <ion-segment-content id="first">First</ion-segment-content>
+    <ion-segment-content id="second">Second</ion-segment-content>
+    <ion-segment-content id="third">Third</ion-segment-content>
+  </ion-segment-view>
+</ion-content>

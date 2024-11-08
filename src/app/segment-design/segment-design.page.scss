@@ -1,0 +1,91 @@
+ion-segment-view {
+    height: 100vh;
+  }
+
+  ion-segment {
+    // --background: #F78F35;
+  }
+  ion-setment-button{
+    --color: white;
+  }
+
+  ion-segment-button span {
+    position: absolute;
+    top: 5px;
+    right: -10px;
+  }
+
+  ion-segment-button{
+    // border-right: 1px solid var(--UJ-color-boxShadow3);
+ }
+
+//  .segment-button-checked {
+//     background: var(--UJ-color-secondary) !important;
+//     color: var(--UJ-color-background) !important;
+//     z-index: 0;
+//     margin: -2px;
+//   }
+
+ion-segment-button::part(icon) {
+  color: yellow;
+}
+
+  .segment-button-checked > ion-icon, .segment-button-checked > ion-label {
+    color: white !important;
+  }
+
+//   ion-segment-button::part(indicator-background) {
+//     background: #08a391;
+//   }
+
+//   .segment-slack{
+//     --color: #e4405f;
+//   --color-checked: #ffffff;
+//   --background-hover: rgba(228, 64, 95, 0.1);
+//   --background-activated: rgba(228, 64, 95, 0.16);
+//   --background-checked: #e4405f;
+//   }
+  
+
+  .segment-button-checked {
+    --color: #e4405f;
+  --color-checked: #ffffff;
+  --background-hover: rgba(228, 64, 95, 0.1);
+  --background-activated: rgba(228, 64, 95, 0.16);
+  --background-checked: #e4405f;
+    // background-color: var(--UJ-color-secondary);
+    // border: 1px solid var(--ion-color-medium);
+    // color: var(--UJ-color-background) !important;
+    // border-radius: 20px;
+    // padding: 0 5px;
+    // margin: 0 5px;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25);
+    // --indicator-color: transparent !important;
+    // --indicator-color-checked: transparent !important;
+
+    ion-label {
+        // font-size: 1rem;
+        // font-weight: 600;
+        // margin-top: 5px;
+    }
+
+    ion-icon {
+        min-width: 0;
+        // font-size: 1rem !important;
+    }
+}
+
+  ion-segment-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  ion-segment-content:nth-of-type(1) {
+    background: lightpink;
+  }
+  ion-segment-content:nth-of-type(2) {
+    background: lightblue;
+  }
+  ion-segment-content:nth-of-type(3) {
+    background: lightgreen;
+  }
